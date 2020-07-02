@@ -10,9 +10,27 @@ from tkinter import *
 import os.path
 import json
 
-steamFolder = 'C:\Program Files (x86)\Steam\steamapps\common\Factorio'
+
 baseFolder = ''
 setConfigStartscreen = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def startUp():
     #Checks config file for Factorio base folder and users mod folder
@@ -33,19 +51,20 @@ def startUp():
     
     return(config)
 
-def browse():
+def browseForFolder():
     folder_selected = filedialog.askdirectory()
     output.delete(0.0, END)
     output.insert(END, folder_selected)
 
 
 def checkForFactiorioFolder():
-    os.path.isfile(fname) 
+    steamFolder = 'C:\Program Files (x86)\Steam\steamapps\common\Factorio'
     if os.path.exists(steamFolder):
         baseFolder = 'C:\Program Files (x86)\Steam\steamapps\common\Factorio\data\base\prototypes'
     else:
         #Factorio is not installed in standard steam folder, user needs to specify correct folder.
-        setConfigStartscreen = True
+        baseFolder = ''
+    return(baseFolder)
         
 
 def hide(state):
