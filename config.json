@@ -1,1 +1,1 @@
-{"modFolder": "tempPath", "baseFolder": "tempPath", "steamFolder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio"}
+{"modFolder": "tempPath", "baseFolder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio", "steamFolder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio", "baseFiles": ["armor.lua", "capsule.lua", "demo-ammo.lua", "demo-armor.lua", "demo-crash-site-item.lua", "demo-item-groups.lua", "demo-item.lua", "demo-turret.lua", "equipment.lua", "item.lua", "mining-tools.lua", "module.lua", "turret.lua"]}
